@@ -19,6 +19,21 @@ public class Member {
         this.borrowedCount = borrowedCount;
     }
 
+    private boolean canBorrow(){
+        if (borrowedCount>=5){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    private boolean canReturn(){
+        if (borrowedCount <= 0){
+            return false;
+        }
+        else
+            return true;
+    }
 
 
 
