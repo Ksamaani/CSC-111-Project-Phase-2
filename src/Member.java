@@ -13,7 +13,7 @@ public class Member {
     public int TotalBorrows;
     public int TotalReturns;
 
-    public void Member (int id,String name,int borrowedCount){
+    public Member (int id,String name,int borrowedCount){
         this.id = id;
         this.name = name;
         this.borrowedCount = borrowedCount;
@@ -28,7 +28,7 @@ public class Member {
         }
     }
     private boolean canReturn(){
-        if (borrowedCount <= 0){
+        if (borrowedCount == 0){
             return false;
         }
         else
