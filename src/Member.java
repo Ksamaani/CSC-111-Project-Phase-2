@@ -7,18 +7,20 @@ public class Member {
     private int numBorrows;
     private int numReturns;
     private double sessionFees;
-
+    // thees are static because its common foe multiple users
     public static double TotalRevenue;
     public static int TotalViewBorrowed;
     public static int TotalBorrows;
     public static int TotalReturns;
 
+    //Constructor
     public Member (int id,String name,int borrowedCount){
         this.id = id;
         this.name = name;
         this.borrowedCount = borrowedCount;
     }
 
+    // Methods
     private boolean canBorrow(){
         if (borrowedCount>=5){
             return false;
@@ -86,5 +88,20 @@ public class Member {
         numReturns = 0;
         sessionFees = 0;
     }
+    // Getters & Setters
+    public int getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getBorrowedCount() {
+        return borrowedCount;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
