@@ -1,3 +1,10 @@
+//This Project Is Done By:
+// Khalid ALSamaani     446100885
+// Nasser ALOthman      446103585
+// Abdullah ALFrayan    446105689
+
+//GitHub Repository : https://github.com/Ksamaani/CSC-111-Project-Phase-2
+
 
 import java.util.Scanner;
 
