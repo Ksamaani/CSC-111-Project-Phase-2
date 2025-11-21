@@ -9,10 +9,10 @@ public class Member {
     private int numReturns;
     private double sessionFees;
     // These are static because they are common for multiple users
-    public static double TotalRevenue;
-    public static int TotalViewBorrowed;
-    public static int TotalBorrows;
-    public static int TotalReturns;
+    public static double TotalRevenue = 0.00;
+    public static int TotalViewBorrowed = 0;
+    public static int TotalBorrows = 0 ;
+    public static int TotalReturns = 0 ;
 
     //Constructor
     public Member (int id,String name,int borrowedCount){
