@@ -3,11 +3,12 @@ public class Member {
     private int id;
     private String name;
     private int borrowedCount;
+    // Session variables
     private int numViewBorrowed;
     private int numBorrows;
     private int numReturns;
     private double sessionFees;
-    // thees are static because its common foe multiple users
+    // These are static because they are common for multiple users
     public static double TotalRevenue;
     public static int TotalViewBorrowed;
     public static int TotalBorrows;
@@ -88,6 +89,7 @@ public class Member {
         numReturns = 0;
         sessionFees = 0;
     }
+
     // Getters & Setters
     public int getId() {
         return id;
